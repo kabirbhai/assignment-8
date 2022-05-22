@@ -1,9 +1,13 @@
 import React from "react";
+import "./index.css";
+import Home from "./Pages/Home/Home";
+import Navbar from "./Pages/Shared/Navbar";
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-blue-900">hello</h1>
+      <Navbar />
+      <Home />
     </div>
   );
 };
