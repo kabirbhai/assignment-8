@@ -1,0 +1,15 @@
+[
+    {"_id": 1, "name": "Accurist watch", "price": "$298", "img": "https://i.ibb.co/yhfSjPZ/wristwatch-gad05a2499-640.jpg"},
+    {"_id": 2, "name": "ADINA Watches", "price": "$500", "img": "https://i.ibb.co/6HnBw02/Watch-PNG-180x180.png"},
+    {"_id": 3, "name": "Adidas watch", "price": "$412", "img": "https://i.ibb.co/C20yL7Y/watch-ge40e0e74b-640.jpg"},
+    {"_id": 4, "name": "Bausele watch", "price": "$333", "img": "https://i.ibb.co/H2DgR2F/watch-g57ebe88d0-640.jpg"},
+    {"_id": 5, "name": "Casio watch", "price": "$846", "img": "https://i.ibb.co/WVv2vv5/time-gf7e1b9e62-640.jpg"},
+    {"_id": 6, "name": "Carl watch", "price": "$1000", "img": "https://i.ibb.co/2Ff56Mc/time-g2d11487e3-640.jpg"},
+    {"_id": 7, "name": "Cartina watch", "price": "$2598", "img": "https://i.ibb.co/pWxpK5F/smart-watch-ge91a2f18d-640.jpg"},
+    {"_id": 8, "name": "Apple watch", "price": "$792", "img": "https://i.ibb.co/LhS6hsf/pocket-watch-g155c13d13-640.jpg"},
+    {"_id": 9, "name": "Ebel watch", "price": "$800", "img": "https://i.ibb.co/BT0WNX2/fashion-g4c32f53c1-640.jpg"},
+    {"_id": 10, "name": "Fendi watch", "price": "$5000", "img": "https://i.ibb.co/LdrNpPG/clock-ge481c1991-640.jpg"},
+    {"_id": 11, "name": "Garmin watch", "price": "$321", "img": "https://i.ibb.co/7nqCsDh/alarm-g34184fed6-640.jpg"},
+    {"_id": 12, "name": "Roamer watch", "price": "$121", "img": "https://i.ibb.co/c62w716/analog-watch-g91b90204f-640.jpg"},
+    
+]
