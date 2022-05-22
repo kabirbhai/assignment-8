@@ -6,12 +6,21 @@ import ProductDetails from "./ProductDetails";
 
 const Products = () => {
   const [products] = useProduct([]);
-
   const [cart, setCart] = useState([]);
 
-  const handleAddToCart = (product) => {
-    const newProduct = [...cart, product];
-    setCart(newProduct);
+  const handleAddToCart = (selectedProduct) => {
+    const exists = cart.find(
+      (products) => products._id === selectedProduct._id
+    );
+    if (!exists) {
+      const newProduct = [...cart, selectedProduct];
+      setCart(newProduct);
+    } else {
+      alert("This Item already added");
+    }
+    if (cart.length > 3) {
+      alert("You cannot add more than 4 Item");
+    }
   };
 
   const removeFromCart = (remove) => {
@@ -21,13 +30,13 @@ const Products = () => {
 
   return (
     <section>
-      <div className="text-center bg-primary py-4 text-white">
+      <div className="text-center  py-4 ">
         <h1 className="text-Primary ">
           Choose your favorite <span>WATCH</span>
         </h1>
         <h3>Choose 4 watch</h3>
       </div>
-      <div className=" main-container">
+      <div className="  main-container">
         <div className=" container product-container ">
           {products.map((product) => (
             <Product
@@ -37,7 +46,7 @@ const Products = () => {
             />
           ))}
         </div>
-        <div className="productDetails-container bg-secondary">
+        <div className="productDetails-container ">
           <ProductDetails cart={cart} removeFromCart={removeFromCart} />
         </div>
       </div>

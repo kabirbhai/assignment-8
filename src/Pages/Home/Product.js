@@ -4,7 +4,10 @@ const Product = ({ product, handleAddToCart }) => {
 
   return (
     <div>
-      <div class="card" style={{ width: "20rem", margin: "auto" }}>
+      <div
+        class="card"
+        style={{ width: "20rem", margin: "auto", flexWrap: "wrap" }}
+      >
         <img
           className="img-thumbnail"
           src={img}
@@ -18,7 +21,7 @@ const Product = ({ product, handleAddToCart }) => {
           </p>
           <button
             onClick={() => handleAddToCart(product)}
-            class="btn btn-primary w-100 d-flex justify-content-around align-items-center"
+            class="btn btn-outline-info w-100 d-flex justify-content-around align-items-center p-2 fs-6"
           >
             Add to cart{" "}
             <svg
