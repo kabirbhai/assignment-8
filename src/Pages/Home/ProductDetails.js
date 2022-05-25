@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 const ProductDetails = ({ cart, removeFromCart }) => {
+  const [chooses, setChooses] = useState([]);
+  const chooseOne = (choose) => {
+    const newChoose = choose[Math.floor(Math.random() * choose.length)];
+    setChooses(newChoose);
+  };
   return (
     <div className="cart-container mb-4">
       <h3 className="text-center">Your Item</h3>
@@ -37,7 +44,23 @@ const ProductDetails = ({ cart, removeFromCart }) => {
         ))}
       </div>
       <div className="text-center">
-        {cart.length > 3 && <button>Remove all</button>}
+        {cart.length >= 4 && (
+          <div>
+            <button
+              onClick={() => chooseOne(cart)}
+              className="border-2 m-2 p-1 rounded-md hover:bg-purple-600 hover:text-white font-bold "
+            >
+              Choose One
+            </button>
+            <button className="border-2 m-2 p-1 rounded-md hover:bg-purple-600 hover:text-white font-bold ">
+              Remove All
+            </button>
+          </div>
+        )}
+        <div className="d-flex justify-content-between align-items-center border-2 bg-slate-200 mt-6 p-4 rounded-lg">
+          <img width={30} src={chooses.img} alt="" className=" rounded-lg" />
+          <p className="text-xl">{chooses.name}</p>
+        </div>
       </div>
     </div>
   );
